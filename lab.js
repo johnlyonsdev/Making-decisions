@@ -7,7 +7,12 @@
 */
 
 //CODE HERE
-
+let lovecode = true
+if (lovecode === true) {
+  console.log("I love to code!")
+} else {
+  console.log("Coding has it's challenges.")
+}
 // For problems 2-3 use the following lines of code:
 var amysAge = 29
 var brittanisAge = 34
@@ -21,7 +26,13 @@ var brittanisBirthYear = 1986
 */
 
 //CODE HERE
-
+if (amysAge > brittanisAge) {
+  console.log("Amy is older")
+} else if (brittanisAge > amysAge) {
+  console.log("Brittani is older")
+} else {
+  console.log("They are the same age")
+}
 
 ////////// PROBLEM 3 //////////
 
@@ -30,7 +41,11 @@ var brittanisBirthYear = 1986
 */
 
 //CODE HERE
-
+if (amysBirthYear === brittanisBirthYear) {
+  console.log("Amy & Brittani were born in the same year")
+} else {
+  console.log("Amy & Brittani were not born in the same year")
+}
 
 
 // For problems 4-5 use the following lines of code:
@@ -42,15 +57,16 @@ var arr = [10,20,30,40,50,60]
 */
 
 //Code Here
-
-
+let firstitem = arr[0]
+console.log(firstitem)
 ////////// PROBLEM 5 //////////
 /*
   Remove the last item from the 'arr' array and store it in a variable named 'lastItemRemoved'. Console.log the array to verify you no longer have the last item.
 */
 
 //Code Here
-
+let lastItemRemoved = arr.pop()
+console.log(lastItemRemoved)
 ////////// PROBLEM 6 //////////
 
 // Do not edit the code below.
@@ -62,7 +78,9 @@ var family = ['Tyler', 'Jordan', 'Ryan', 'Alice', 'Ireland'];
 */
 
 //Code Here
-
+for (i=0; i<family.length; i++) {
+  console.log(family[i])
+}
 
 
 ////////// PROBLEM 7 //////////
@@ -77,8 +95,12 @@ let evensArr = []
 */
 
 //Code Here
-
-
+for (i=0; i<nums.length; i++) {
+  if (nums[i] % 2 === 0) {
+evensArr.push(nums[i])
+  }
+}
+console.log(evensArr)
 
 ////////// PROBLEM 8 //////////
 
@@ -91,7 +113,17 @@ var score = 74
 */
 
 //Code Here
-
+if (score >= 90) {
+console.log("A")
+} else if (score >= 80) {
+  console.log("B")
+} else if (score>= 70) {
+  console.log("C")
+} else if (score >= 60) {
+  console.log("D") 
+} else {
+  console.log("F")
+}
 
 ////////// Intermediate Problems //////////
 
